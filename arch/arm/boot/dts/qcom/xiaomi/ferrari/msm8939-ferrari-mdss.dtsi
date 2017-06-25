@@ -91,4 +91,11 @@
 			};
 		};
 	};
+
+	mdss_mdp: qcom,mdss_mdp@1a00000 {
+		mdss_fb0: qcom,mdss_fb_primary {
+			qcom,mdss-fb-splash-logo-enabled;
+		};
+	};
+
 };
