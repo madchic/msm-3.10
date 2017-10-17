@@ -14,10 +14,8 @@
 	spmi_bus: qcom,spmi@200f000 {
 		qcom,pm8916@0 {
 			pm8916_rtc: qcom,pm8916_rtc {
-				/* thewisenerd: power-off alarm is broken in android N */
-				/* disable alarm pwrup until it is fixed in userspace  */
-				qcom,qpnp-rtc-write = <0>;
-				qcom,qpnp-rtc-alarm-pwrup = <0>;
+				qcom,qpnp-rtc-write = <1>;
+				qcom,qpnp-rtc-alarm-pwrup = <1>;
 			};
 		};
 	};
