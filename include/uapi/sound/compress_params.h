@@ -480,7 +480,16 @@ struct snd_codec {
 	__u32 align;
 	__u32 compr_passthr;
 	union snd_codec_options options;
-	__u32 reserved[3];
+	__u32 flags;
+	__u32 reserved[2];
 } __attribute__((packed, aligned(4)));
+
+struct snd_codec_metadata {
+	__u32 length;
+	__u32 offset;
+	__u64 timestamp;
+	__u32 reserved[4];
+} __attribute__((packed, aligned(4)));
+
 
 #endif
